@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoX | Premium Stopwatch</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+    </div>
+
+    <!-- Stopwatch Card -->
+    <div class="container">
+
+        <h3>Precision Stopwatch</h3>
+
+        <h1>ChronoX</h1>
+
+        
+        <!-- Stopwatch Display -->
+        <div id="display">
+            00:00:00:00
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button id="startBtn">
+                <i class="fa-solid fa-play"></i>
+                Start
+            </button>
+
+            <button id="pauseBtn">
+                <i class="fa-solid fa-pause"></i>
+                Pause
+            </button>
+
+            <button id="resetBtn">
+                <i class="fa-solid fa-rotate-left"></i>
+                Reset
+            </button>
+
+            <button id="lapBtn">
+                <i class="fa-solid fa-flag-checkered"></i>
+                Lap
+            </button>
+
+        </div>
+
+        <!-- Lap History -->
+        <div class="laps">
+
+            <h2>Lap History</h2>
+
+            <ul id="lapList"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

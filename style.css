@@ -1,0 +1,348 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#7c3aed);
+}
+
+/* Animated Background */
+
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(25px);
+    animation:float 8s infinite ease-in-out;
+}
+
+.one{
+    width:260px;
+    height:260px;
+    background:#38bdf8;
+    top:8%;
+    left:8%;
+}
+
+.two{
+    width:320px;
+    height:320px;
+    background:#8b5cf6;
+    right:8%;
+    bottom:10%;
+    animation-delay:2s;
+}
+
+.three{
+    width:180px;
+    height:180px;
+    background:#ec4899;
+    bottom:25%;
+    left:45%;
+    animation-delay:4s;
+}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-30px);
+}
+
+}
+
+/* Glass Card */
+
+.container{
+
+width:430px;
+
+padding:40px;
+
+background:rgba(255,255,255,0.12);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.2);
+
+border-radius:25px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+text-align:center;
+
+color:white;
+
+}
+
+/* Heading */
+
+.container h3{
+
+font-size:15px;
+
+letter-spacing:4px;
+
+color:#cbd5e1;
+
+margin-bottom:10px;
+
+text-transform:uppercase;
+
+}
+
+.container h1{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+font-weight:700;
+
+}
+
+/* Date & Time */
+
+
+#display{
+
+font-size:52px;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+padding:20px;
+
+margin-bottom:30px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 0 25px rgba(255,255,255,.12);
+
+text-shadow:0 0 20px #38bdf8;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+margin-bottom:30px;
+
+}
+
+button{
+
+padding:15px;
+
+border:none;
+
+border-radius:14px;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.35s;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+color:white;
+
+}
+
+button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+button:active{
+
+transform:scale(.95);
+
+}
+
+#startBtn{
+
+background:linear-gradient(135deg,#22c55e,#16a34a);
+
+}
+
+#pauseBtn{
+
+background:linear-gradient(135deg,#f59e0b,#f97316);
+
+}
+
+#resetBtn{
+
+background:linear-gradient(135deg,#ef4444,#dc2626);
+
+}
+
+#lapBtn{
+
+background:linear-gradient(135deg,#3b82f6,#2563eb);
+
+}
+
+/* Lap Section */
+
+.laps{
+
+text-align:left;
+
+max-height:220px;
+
+overflow-y:auto;
+
+}
+
+.laps h2{
+
+text-align:center;
+
+margin-bottom:15px;
+
+font-size:22px;
+
+}
+
+/* Scrollbar */
+
+.laps::-webkit-scrollbar{
+
+width:6px;
+
+}
+
+.laps::-webkit-scrollbar-thumb{
+
+background:#94a3b8;
+
+border-radius:10px;
+
+}
+
+/* Lap Cards */
+
+#lapList{
+
+list-style:none;
+
+}
+
+#lapList li{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(255,255,255,.08);
+
+padding:12px 18px;
+
+margin-bottom:12px;
+
+border-radius:12px;
+
+border-left:5px solid #38bdf8;
+
+animation:slide .4s ease;
+
+font-size:15px;
+
+}
+
+@keyframes slide{
+
+from{
+
+opacity:0;
+
+transform:translateX(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:500px){
+
+.container{
+
+width:92%;
+
+padding:25px;
+
+}
+
+#display{
+
+font-size:36px;
+
+}
+
+.buttons{
+
+grid-template-columns:1fr;
+
+}
+
+.container h1{
+
+font-size:34px;
+
+}}
