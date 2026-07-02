@@ -91,3 +91,4 @@ https://github.com/AnanyaGupta627/PRODIGY_WD_02
 ## 📄 License
 
 This project was developed as part of the **Prodigy InfoTech Web Development Internship**.
+Last updated: July 2026
